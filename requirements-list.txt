@@ -6,4 +6,5 @@ zsh
 hyprland
 hyprpaper
 tmux
-
+swaync
+hyperpolkitagent
