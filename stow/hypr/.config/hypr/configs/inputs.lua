@@ -4,3 +4,9 @@ hl.config({
         follow_mouse = 1
     }
 })
+
+hl.gesture({
+    fingers = 4,
+    direction = "horizontal",
+    action = "workspace"
+})
