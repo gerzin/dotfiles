@@ -1,0 +1,21 @@
+[user]
+	name = Gerardo Zinno
+	email = zinno.gerardo.95@gmail.com
+
+[core]
+    editor = nvim
+    excludesfile = ~/.gitignore_global
+
+[color]
+    ui = auto
+
+[alias]
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    lg = log --oneline --graph --all --decorate
+    amend = commit --amend --no-edit
+[credential]
+	helper = store
+

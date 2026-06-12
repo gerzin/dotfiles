@@ -1,0 +1,9 @@
+neovim
+fzf
+ripgrep
+stow
+zsh
+hyprland
+hyprpaper
+tmux
+
