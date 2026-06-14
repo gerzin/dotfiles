@@ -3,8 +3,6 @@ local terminal    = "kitty"
 local fileManager = "dolphin"
 local menu        = "hyprlauncher"
 
-hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(terminal))
-hl.bind(mainMod .. " + C", hl.dsp.window.close())
 
 
 -- Switch workspaces with mainMod + [0-9]
