@@ -6,7 +6,7 @@ list_configs() {
     ls -1 "$SCRIPT_DIR/stow" | fzf --prompt="Select config to install: "
 }
 
-install_package() {
+install_config() {
     local pkg="$1"
     stow -v -d "$SCRIPT_DIR/stow" -t "$HOME" "$pkg"
 }
@@ -15,9 +15,9 @@ main() {
     local pkg
     pkg=$(list_configs)
     if [[ -n "$pkg" ]]; then
-        install_package "$pkg"
+        install_config "$pkg"
     else
-        echo "No package selected. Exiting."
+        echo "No config selected. Exiting."
     fi
 }
 
