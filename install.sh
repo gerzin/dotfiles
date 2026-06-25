@@ -8,6 +8,11 @@ list_configs() {
 
 install_config() {
     local pkg="$1"
+    
+    if [[ "$pkg" == "hypr" ]]; then
+        mkdir -p "~/.wallpapers"
+    fi
+
     stow -v -d "$SCRIPT_DIR/stow" -t "$HOME" "$pkg"
 }
 
@@ -15,7 +20,7 @@ main() {
     local pkg
     pkg=$(list_configs)
     if [[ -n "$pkg" ]]; then
-        install_config "$pkg"
+       install_config "$pkg"
     else
         echo "No config selected. Exiting."
     fi
