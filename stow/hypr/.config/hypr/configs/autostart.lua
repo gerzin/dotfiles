@@ -30,4 +30,5 @@ hl.on("hyprland.start", function()
   
   -- Hyprland Plugin Manager (if you use hyprpm plugins)
   hl.exec_cmd("hyprpm reload")
+
 end)
