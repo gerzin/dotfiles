@@ -12,7 +12,7 @@
 
 hl.on("hyprland.start", function()
   -- Core Desktop Necessities
-  hl.exec_cmd("hyprpolkitagent")
+  hl.exec_cmd("systemctl --user start hyprpolkitagent")
   hl.exec_cmd("swaync")
   
   -- Aesthetics & Ricing
